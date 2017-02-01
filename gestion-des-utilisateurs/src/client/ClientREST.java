@@ -15,7 +15,7 @@ public class ClientREST {
 	public static void main(String[] args) {
 		
 		Client client = ClientBuilder.newClient();
-		WebTarget cible = client.target(UriBuilder.fromPath("http://172.17.0.5:8080/listeu"));
+		WebTarget cible = client.target(UriBuilder.fromPath("http://172.17.0.5:8080/listeur"));
 		WebTarget ciblefinale = cible.path("listedto");
 		ListeUtilisateurDTO dtoliste = ciblefinale.request(MediaType.APPLICATION_XML).get(ListeUtilisateurDTO.class);
 		for(UtilisateurDTO iter: dtoliste.getListedto())
