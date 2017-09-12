@@ -1,0 +1,81 @@
+#menu_ex05
+{
+  
+ margin:0;
+	padding:0;
+ 
+
+}
+#menu_ex05 li
+{
+display:inline-block;
+position:relative;
+width:180px;
+}
+
+#menu_ex05 a
+{
+color:white;
+text-align:center;
+text-decoration:none;
+display:block;
+background-color:black;
+padding:16px 20px;
+margin:5;
+
+}
+
+/*#menu_ex05 li:first-child a { 
+    background-color:blue
+	;
+}
+*/
+
+
+#menu_ex05>li:hover>ul
+{
+	display:block;
+	float:left;
+	}
+
+
+
+#menu_ex05 li ul li a
+{
+	background-color:red;
+	padding-left:100px;
+
+
+}
+
+
+
+
+
+
+#menu_ex05>li
+{
+	display:inline-block;
+	position:relative;
+	margin:0;
+	padding:0;
+	
+}
+
+#menu_ex05>li>ul
+
+{
+	
+	display:none;
+	position:absolute;
+	width:180;
+	margin:0;
+	padding:180;
+
+}
+#menu_ex05>li:hover>ul
+{
+	display:inline-block;
+	margin:0;
+	padding:0;
+	}

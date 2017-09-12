@@ -1,0 +1,27 @@
+/* pour notre grille, width devra dÃ©compter jusqu'au border */
+* { box-sizing: border-box; }
+
+/* 2eme essai, Ã©crire le code SASS, gÃ©nÃ©rant la feuille prÃ©cÃ©dente */
+/* ComplÃ©tez vous-mÃªme les valeurs d'attributs */
+$number : 6;
+$gutter: 15px;
+.container-grid-#{$number} {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+	justify-content: space-between;
+	margin-left:-#{$gutter};
+}
+/* placez ici les valeurs des attribut des enfants directs de la rille Ã  4 colonnes */
+.container-grid-#{$number} > * {
+    flex: 0 0 auto;
+    width: calc(100% * 1 / #{$number} -  #{$gutter});
+	border: 1px solid black;
+	margin-left:#{$gutter};
+}
+.flexitem-double {
+        width: calc(100% * 2 / #{$number} -  #{$gutter});
+    }
+.flexitem-triple {
+        width: calc(100% * 3 / #{$number} -  #{$gutter});
+    }

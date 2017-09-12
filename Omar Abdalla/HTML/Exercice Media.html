@@ -1,0 +1,67 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Media</title>
+
+
+<style type="text/css">
+body {
+	font-family:Sans-serif;
+	font-size:100%;
+	background:#F1F1F1;
+}
+
+p {
+	color:#000;
+	background:#fff;
+	padding: 0.5em 1em;
+	margin: 1em;
+	color:#666;
+	line-height:150%;
+}
+
+h1 {
+	padding:0;
+	color:#ccc;
+	margin-bottom:0;
+}
+
+
+.diag {
+	color:#fff;
+}
+
+@media (max-width: 640px) { .a
+}
+background: red;
+
+@media screen and (min-width: 640px) and (max-width: 800px){.b
+ {
+background: red;
+
+
+@media screen and (min-width: 800px) and (max-width:1024px){.c
+{
+background: red;
+
+@media screen and (min-width:1024px) and (max-width:1280px){.d
+{
+background: red;
+
+</style>
+
+
+
+
+</head>
+<body>
+
+<p class="diag a">La page est affichée sur un périphérique de maximum 640px</p>
+	<p class="diag b">La page est affichée avec une largeur &gt; 640px et &lt; 800px </p>
+	<p class="diag c">La page est affichée avec une largeur &gt; 800px et &lt; 1024px</p>
+	<p class="diag d">La page est affichée avec une largeur &gt; 1024px et &lt; 1280px</p>
+	
+	</body>
+</html>

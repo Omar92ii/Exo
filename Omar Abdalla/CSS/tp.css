@@ -1,0 +1,19 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* pour notre grille, width devra dÃ©compter jusqu'au border */
+{ box-sizing: border-box; }
+
+/* 1er essai : calcul manuel */
+/* ComplÃ©tez vous-mÃªme les valeurs d'attributs */
+.container-grid-4 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+background-color:red;
+}
+/* placez ici les valeurs des attribut des enfants directs de la rille Ã  4 colonnes */
+.container-grid-4 > * {
+    flex: 0 0 auto;
+    width: 25%;
+}

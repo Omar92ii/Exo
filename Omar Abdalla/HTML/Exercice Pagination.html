@@ -1,0 +1,144 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Pagination</title>
+  <link rel="stylesheet" href="style3.css">
+  
+<style type="text/css">
+body {
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:11px;
+}
+h2 {
+	padding: 2px;
+	margin: 2px;
+}
+body>*, main>* {
+	border-radius: 3px;
+}
+a {
+	text-decoration:none;
+}
+header {
+	background-color:DodgerBlue;
+	padding: 4px;
+	margin: 2px;
+}
+header h1 {
+	text-align:center;
+	font-size:16px;
+	padding:20px 4px;
+	margin: 2px;
+}
+.content {
+	background-color:Red;
+	padding: 4px;
+	margin: 2px;
+}
+aside {
+	background-color:Chocolate;
+	padding: 4px;
+	margin: 2px;
+}
+nav {
+	background-color:Gold;
+	padding: 4px;
+	margin: 2px;
+}
+footer {
+	background-color:Olive;
+	padding: 4px;
+	margin: 2px;
+	text-align:center;
+}
+footer h2 {
+	float:left;
+}
+nav, aside {
+	width: 18em;
+}
+main {
+	display:flex;
+}
+body {
+	display:flex;
+	flex-direction : column;
+}
+main section {
+	flex: 1 1 0%;
+}
+body {
+	min-height: 99vh;
+}
+nav {
+	order : -1;
+}
+@media (max-width: 640px){
+	main {
+		flex-direction : column; /* les blocs du main doivent se superposer, l'axe principal est "column" */
+	}
+	nav , aside {
+		width : auto ; /* les largeurs ne sont plus ficxes*/
+	}
+	.content {
+		flex-basis: auto; /* réinitialisation de la première propriété de flex */
+	}
+	nav {
+		order : 1; /* l'ordre ne doit plus être inversé */
+	}
+}
+</style>
+
+</head>
+<body>
+<header>
+  <h1>header : Un gabarit pour ma licence professionnelle</h1>
+</header>
+<main>
+  <section class="content">
+    <h2>main section.content</h2>
+    <h4>compétence technologique : </h4>
+    <ul>
+      <li>langages du Web, </li>
+      <li>réseaux,  outils, </li>
+      <li>environnement informatique</li>
+    </ul>
+    <h4>compétence en communication visuelle</h4>
+    <ul>
+      <li>infographie, </li>
+      <li>animation multimédia, </li>
+      <li>culture de l'image, </li>
+      <li>art graphique</li>
+    </ul>
+  </section>
+  <nav>
+    <h2>nav</h2>
+    <ul>
+      <li><a title="Accueil" href="#">Accueil</a></li>
+      <li><a href="#">La formation</a></li>
+      <li><a href="#">Les Métiers cibles</a></li>
+      <li><a href="#">Alternance et Apprentissage</a> </li>
+      <li><a href="#">Compte Personnel de Formation</a></li>
+      <li><a title="Programme" href="#">Le programme</a> </li>
+    </ul>
+  </nav>
+  <aside>
+    <h2>aside</h2>
+    <p><strong>CFA Vie Scolaire</strong><br>
+      Isabelle Maës<br>
+      01 44 27 84 17<br>
+      <a href="mailto:isabelle.maes@upmc.fr">isabelle.maes@upmc.fr</a><br>
+      <br>
+      <strong>CFA Relations entreprises <br>
+      </strong> Blandine MAHON<br>
+      01 44 27 74 40<br>
+      <a href="mailto:carole.bellaiche@upmc.fr">blandine.mahon@upmc.fr</a></p>
+  </aside>
+</main>
+<footer>
+  <h2>footer</h2>
+  <p>UPMC - 4 place Jussieu 75005 Paris, France - Tél. +33 1 44 27 44 27 </p>
+</footer>
+</body>
+</html>

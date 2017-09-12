@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" >
+  <title>Utilisation d'un tableau</title>
+  <meta charset="UTF-8">
+  <script>
+  
+  var tab = new Array() ;
+tab[0]=-2 ;
+tab[1]=1 ;
+tab[2]=4 ;
+  
+  function additionne(x){
+ 
+ return x+2 ;
+ 
+ 
+ }
+  function affiche(){
+
+alert(additionne(tab[0]));
+alert(additionne(tab.length-1));
+
+}
+
+  </script>
+</head>
+<body>
+
+<h1>Utilisation d'un tableau</h1>
+
+<p>Cliquez sur le bouton pour lancer la fonction&nbsp;: <button onclick="affiche()">Lancer la fonction</button></p>
+
+</body>
+</html>

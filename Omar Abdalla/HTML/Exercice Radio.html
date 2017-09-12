@@ -1,0 +1,42 @@
+<title>TD Sélecteur d'attribut</title>
+
+<link href="Css Radio.css" rel="stylesheet" type="text/css">
+<body>
+<div id="tout">
+  <header class="entete">
+    <h1><a href="../../index.html#selecteurdattributTD"><img src="" width="36" height="40" alt="Table des matières"></a><span>TD Sélecteur d'attribut</span><a href="http://www.upmc.fr" target="_blank"><img src="http://www.licence.elec.upmc.fr/S_tec/coursEnLigne/css3/images/upmc-logotype_100.gif" width="100" height="40"></a></h1>
+  </header>
+
+<p>Un florilège de sélecteurs (adjacent, frère, enchassement, cheked, content) à mettre en oeuvre pour une interaction amusante</p>
+<p>Au clic sur le radio bouton, votre CSS doit produire l'effet décrit en label du radio bouton (cf screenchot ci-dessous)</p>
+<style>
+label {
+	display:block;
+}
+input {
+	float:left;
+}
+
+</style>
+
+
+<body>
+  <input id="button1" type="radio"  name="RadioGroup1">
+  <label for="button1">Entoure en bleu les photos dont la desciption longue (attribut &quot;longdesc&quot;) contient une url en https</label>
+  <input id="button2" type="radio" name="RadioGroup1"><label for="button2">Fait apparaitre le nom des fichiers contenant la photo après la photo</label>
+  <input id="button3" type="radio" name="RadioGroup1"><label for="button3">Entoure de rouge les photos dont l'attribut alt contient lunette mais pas barbe</label>
+  <input id="button4" type="radio" name="RadioGroup1"><label for="button4">Entoure en jaune dont le alt et le title contienne le mot garçon</label>
+  <input id="button5" type="radio" name="RadioGroup1"><label for="button5">Entoure en vert dont le alt et le title contienne le mot garçon</label>
+  <img src="http://www.licence.elec.upmc.fr/S_tec/coursEnLigne/css3/tp/selecteurs/aymeric.png" width="83" height="100" alt="aymeric lp projet web barbe" longdesc="upmc.fr" title="projet">
+  <img src="http://www.licence.elec.upmc.fr/S_tec/coursEnLigne/css3/tp/selecteurs/baptiste.png" width="85" height="100" alt="baptiste garcon lunette barbe" title="sympa garcon">
+  <img src="http://www.licence.elec.upmc.fr/S_tec/coursEnLigne/css3/tp/selecteurs/celine.png" width="89" height="100" alt="celine fille lunette" longdesc="https://www.alternance.emploi.gouv.fr">
+  <img src="http://www.licence.elec.upmc.fr/S_tec/coursEnLigne/css3/tp/selecteurs/clement.png" width="74" height="100" alt="clement garcon lunette barbe"></p>
+<p><img src="images/effet_entoure_attendu.png" width="612" height="204"></p>
+<p>Demander le corrigé, il est prêt.</p>
+  <footer>
+    <h4><a href="../../../index.html#selecteurdattributTD"><img src="../../images/accueil_3.png" width="36" height="40" alt="Table des matières"></a><span class="droitReserve">Tout droit r&eacute;serv&eacute;, Formation Continue de l'Universit&eacute; Pierre et Marie Curie</span><a href="http://www.upmc.fr" target="_blank"><img src="../../images/upmc-logotype_100.gif" alt="UPMC" width="100" height="40"></a></h4>
+  </footer>
+
+</div>
+</body>
+</html>
